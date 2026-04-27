@@ -134,13 +134,6 @@ Frontend will be available at `http://localhost:5173`
 3. **Order uses integer slots** — Cards use integer `order` field; reordering shifts all siblings. A fractional (float) ordering strategy (e.g., Jira-style) would be more efficient at scale but overkill here.
 4. **No migration tool** — Tables are created via `Base.metadata.create_all()` on startup. Alembic is listed in requirements for future use.
 
----
-
-## AI Usage
-
-Claude (Anthropic) was used to scaffold the initial project structure, generate boilerplate for FastAPI routers and Pydantic schemas, and produce the CSS design system. All logic for drag-and-drop reordering, optimistic updates, and the `move_card` algorithm was reviewed and understood before use.
-
----
 
 ## Nice-to-Haves (with more time)
 
